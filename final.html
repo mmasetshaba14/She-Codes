@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+        color: #333;
+        line-height: 1.6;
+      }
+
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .box {
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      a:hover {
+        color: #cb25a4;
+      }
+      .image1 {
+        display: inline-block;
+        margin: 0 auto;
+        width: 350px;
+        height: 350px;
+      }
+      .image2 {
+        display: inline-block;
+        margin: 0 auto;
+        width: 350px;
+        height: 350px;
+      }
+
+      .image3 {
+        display: inline-block;
+        margin: 0 auto;
+        width: 350px;
+        height: 350px;
+      }
+      .image4 {
+        display: inline-block;
+        margin: 0 auto;
+        width: 350px;
+        height: 350px;
+      }
+      .image1:hover {
+        animation: wiggle 0.5s infinite;
+      }
+
+      .image2:hover {
+        animation: wiggle 0.5s infinite;
+      }
+
+      .image3:hover {
+        animation: wiggle 0.5s infinite;
+      }
+
+      .image4:hover {
+        animation: wiggle 0.5s infinite;
+      }
+
+      @keyframes wiggle {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(3deg);
+        }
+        50% {
+          transform: rotate(-3deg);
+        }
+        75% {
+          transform: rotate(3deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #c6569d;
+        background: #e22e9a;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: white;
+        color: #bf836f;
+        border: 1px solid #8f5a62;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to BeautyBar</h1>
+    <div class="box">
+      <strong>Follow us on:</strong>
+      <a href="https://github.com/mmasetshaba14/Sum-Calculator">GitHub</a>
+    </div>
+    <p>
+      Welcome to our <b>BeautyBar❤️</b>, where beauty meets perfection! Step
+      into a world of pampering and rejuvenation, where our skilled
+      professionals are dedicated to enhancing your natural beauty. From
+      luxurious facials to expert hairstyling and everything in between, we
+      offer a wide range of services tailored to meet your individual needs.
+      Come indulge in a relaxing and uplifting experience at our beauty shop,
+      and let us help you look and feel your absolute best. Your beauty journey
+      starts here
+    </p>
+
+    <br />
+    <hr />
+
+    <img
+      class="image1"
+      src="https://thumbs.dreamstime.com/b/girl-beauty-salon-open-workshop-hairdressing-master-class-makeup-art-shows-model-fashion-professional-practice-skills-151370832.jpg"
+      alt="woman doing makeUp"
+    />
+    <img
+      class="image2"
+      src="https://images.pexels.com/photos/3756242/pexels-photo-3756242.jpeg?cs=srgb&dl=pexels-miguel-angel-guzman-tard%C3%ADo-3756242.jpg&fm=jpg"
+      alt="makeUp brushes"
+    />
+    <img
+      class="image3"
+      src="https://media.istockphoto.com/id/523576663/photo/blondie-fashion-model-pretty-girl-portrait.jpg?s=612x612&w=0&k=20&c=vjEtJIURjxbHDXCz5XHhxqOg5XjSTSz5X-t_5ZYeg9M="
+      alt="eye shadows"
+    />
+    <img
+      class="image4"
+      src="https://media.istockphoto.com/id/1646584845/photo/makeup-professional-cosmetics-on-pink-background.webp?b=1&s=170667a&w=0&k=20&c=xf0MeYUUVL0s6yJHFhpePF5LZw-6hLUivJYgW6zSGuE="
+      alt="makeup pallets"
+    />
+    <br />
+    <button>Book us</button>
+
+    <script>
+      let name = prompt("What's your name?");
+      let gender = prompt("Are you a male or female?");
+
+      if (gender.toLowerCase() === "female") {
+        alert("Hello," + name + " " + "Welcome to our beautyBar❤️.");
+      } else {
+        alert(
+          "Sorry at the moment our services are only for females😓, but you can still scroll through😉."
+        );
+      }
+
+      function book() {
+        let date = prompt("When will you like to visit us?");
+        alert("We will get back to you to confirm your date :" + date);
+      }
+      let bookBut = document.querySelector("button");
+      bookBut.addEventListener("click", book);
+    </script>
+  </body>
+</html>
